@@ -1,0 +1,33 @@
+slices:
+  USER-PWD:
+    # 用户密码提交和处理
+    method:
+      - "POST"
+      - "PUT"
+    routes:
+      - "/home/user/action"
+    files:
+      - "/slices/user.Action"
+
+  ROOM-HOUSE-BASE:
+    # 房间基础信息检测
+    method:
+      - "GET"
+      - "POST"
+      - "PUT"
+    routes:
+      - "/home/room/index"
+      - "/home/room/action"
+    files:
+      - "/slices/room.Base"
+
+  ROOM-FEE:
+    # 房间费用前置判断
+    method:
+      - "GET"
+      - "POST"
+      - "DELETE"
+    routes:
+      - "/home/room/fee"
+    files:
+      - "/slices/room.Fee"

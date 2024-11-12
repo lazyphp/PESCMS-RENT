@@ -1,0 +1,9 @@
+/tmp
+/.idea
+/.vscode
+/upload
+/logs
+/vue/.vscode
+/main.exe
+/public/assets/*
+!/public/assets/index.html

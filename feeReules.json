@@ -1,0 +1,12 @@
+[
+  {
+    "fee_rules_name": "电费",
+    "fee_rules_unit": "度",
+    "fee_rules_unit_price": 0.67
+  },
+  {
+    "fee_rules_name": "水费",
+    "fee_rules_unit": "吨",
+    "fee_rules_unit_price": 2.65
+  }
+]
