@@ -1,0 +1,54 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    /* 让卡片项的高度一致 */
+    .card-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .room-idle .el-card {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 灰色蒙层 */
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .el-card__footer {
+            position: relative;
+            z-index: 2;
+            border-top: 1px solid #abadb2;
+        }
+
+    }
+
+    .el-card {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 保证卡片内容高度一致 */
+    .el-card__body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+}
